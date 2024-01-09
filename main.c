@@ -39,12 +39,11 @@ int main(int argc, char **argv)
 			_swap(&stack, line_number);
 		else if (strcmp(opcode, "add") == 0)
 			_add(&stack, line_number);
+		else if (strcmp(opcode, "nop") == 0)
+			_nop(&stack);
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
-			exit(EXIT_FAILURE);
-		}
-	}
+			exit(EXIT_FAILURE); } }
 	fclose(file), freedom(stack, line);
-	return (0);
-}
+	return (0); }
