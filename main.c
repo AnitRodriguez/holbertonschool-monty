@@ -37,6 +37,8 @@ int main(int argc, char **argv)
 			_pop(&stack, line_number);
 		else if (strcmp(opcode, "swap") == 0)
 			_swap(&stack, line_number);
+		else if (strcmp(opcode, "add") == 0)
+			_add(&stack, line_number);
 		else
 		{
 			fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);

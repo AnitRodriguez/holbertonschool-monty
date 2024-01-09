@@ -44,4 +44,5 @@ int _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
 int _pop(stack_t **stack, unsigned int line_number);
 void _swap(stack_t **stack, unsigned int line_number);
+int _add(stack_t **stack, unsigned int line_number);
 #endif
