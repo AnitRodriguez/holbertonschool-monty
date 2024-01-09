@@ -37,6 +37,8 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void _push(stack_t **stack, unsigned int line_number);
-void _pall(stack_t **stack, unsigned int line_number);
+int _isdigit(int c);
+void freedom(stack_t *stack, char *buffer);
+int _push(stack_t **stack, unsigned int line_number);
+int _pall(stack_t **stack, unsigned int line_number);
 #endif
